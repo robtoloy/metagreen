@@ -1,9 +1,17 @@
 import React from 'react'
 
+import Nav from './Nav.jsx'
+import Home from './Home.jsx'
+import Footer from './Footer.jsx'
+
 class App extends React.Component{
   render(){
     return(
-      <h1>Hey</h1>
+      <div>
+        <Nav/>
+        <Home/>
+        <Footer/>
+      </div>
     )
   }
 }

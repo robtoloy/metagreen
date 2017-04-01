@@ -45,7 +45,7 @@ gulp.task('csscat', ()=>{
 // TRANSPILE + MINIFY + CONCAT ~
 gulp.task('ugly', cb => {
 	pump([
-		gulp.src([dirs.src+'/jquery.js', dirs.src+'/bootstrap.js', dirs.src+'/m.js']),
+		gulp.src(dirs.src+'/m.js'),
     sourcemaps.init(),
     babel({presets: ['es2015']}),
 		uglify(),

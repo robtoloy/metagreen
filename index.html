@@ -106,9 +106,9 @@
             <a id="backToTop" href="#" title="Back to top">^</a>
             <footer class="meta-footer">
                 <p>Metagreen - Est. 2015</p>
-            </footer>            
+            </footer>
         </div>
-    </div>    
+    </div>
 
     <script>
         var slideIndex = 0;
@@ -117,19 +117,19 @@
         function showDivs() {
             var i;
             var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");    
+            var dots = document.getElementsByClassName("demo");
             for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none"; 
+                x[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" w3-selected", "");
-            }    
+            }
             slideIndex++;
-            if (slideIndex> x.length) {slideIndex = 1} 
-            x[slideIndex-1].style.display = "block"; 
+            if (slideIndex> x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
                   dots[slideIndex-1].className += " w3-selected";
             setTimeout(showDivs, 7000); // Change image every 5 seconds. Be sure to set the .fade animation class duration to the same limit (5s)!
-        }        
+        }
     </script>
 
     <!-- jQuery -->
@@ -137,7 +137,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/metagreen.js"></script>    
+    <script src="js/metagreen.js"></script>
 
 </body>
 
