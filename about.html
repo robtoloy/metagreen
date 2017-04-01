@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Metagreen</title>
+
+     <!-- Slideshow CSS -->
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="public/metagreen.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html"><img src="img/logo2.png" class="logo-icon"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="active" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="tech.html">Technology</a>
+                    </li>
+                    <li>
+                        <a href="people.html">People</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <span class="line-accents2">
+    </span>
+
+    <!-- About Header -->
+    <div class="about-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 about-flex">                    
+                    <div class="slideshow-label">Setting the standard for science-powered natural products innovation.</div>
+                    <br>
+                    <div><p class="lead">We do this by building proprietary technologies that tap into the highest value compounds found in plants. Our elite corps of scientists and engineers endeavor to harness this value and realize the potential of the natural world for enhancing human quality of life.</p></div>
+
+                    <div><p class="lead">Metagreen works with an exclusive group of invitation-only clients.</p></div>        
+                    <div><hr class="intro-divider"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.about-header -->
+
+    <div class="container-fluid" style="position: fixed; bottom: 0; width: 100%;">
+        <div class="row">
+            <a id="backToTop" href="#" title="Back to top">^</a>
+            <footer class="meta-footer">
+                <p>Metagreen - Est. 2015</p>
+            </footer>            
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $(".about-flex div").each(function(i) {
+            $(this).delay(200 * i).fadeIn(3000);
+        });
+    </script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/metagreen.js"></script>
+
+</body>
+
+</html>

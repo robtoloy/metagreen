@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Metagreen</title>
+
+     <!-- Slideshow CSS -->
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="public/metagreen.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body class="fadeIn">
+
+
+    <span class="slideshow">
+          <img class="mySlides fadeIt" src="img/home-3.jpg">
+          <img class="mySlides fadeIt" src="img/graph.jpg">
+          <img class="mySlides fadeIt" src="img/home-1.jpg">
+    </span>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html"><img src="img/logo2.png" class="logo-icon"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="tech.html">Technology</a>
+                    </li>
+                    <li>
+                        <a href="people.html">People</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <span class="line-accents">
+    </span>
+
+    <!-- Intro Header -->
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="intro-message">
+                        <div class="slideshow-label">Setting the standard for science-powered natural products innovation.</div>
+                        <div class="slideshow-controls" style="visibility: hidden; position: absolute;">
+                            <div class="w3-content w3-display-container" style="width: 100%">
+                              <div class="w3-left w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%;">
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- /.container -->
+    </div>
+    <!-- /.intro-header -->
+
+    <div class="container-fluid" style="position: fixed; bottom: 0; width: 100%;">
+        <div class="row">
+            <a id="backToTop" href="#" title="Back to top">^</a>
+            <footer class="meta-footer">
+                <p>Metagreen - Est. 2015</p>
+            </footer>            
+        </div>
+    </div>    
+
+    <script>
+        var slideIndex = 0;
+        showDivs();
+
+        function showDivs() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");    
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-selected", "");
+            }    
+            slideIndex++;
+            if (slideIndex> x.length) {slideIndex = 1} 
+            x[slideIndex-1].style.display = "block"; 
+                  dots[slideIndex-1].className += " w3-selected";
+            setTimeout(showDivs, 7000); // Change image every 5 seconds. Be sure to set the .fade animation class duration to the same limit (5s)!
+        }        
+    </script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/metagreen.js"></script>    
+
+</body>
+
+</html>
